@@ -40,7 +40,14 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@comps': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '@views': fileURLToPath(new URL('./src/views', import.meta.url)),
+      '@stores': fileURLToPath(new URL('./src/stores', import.meta.url)),
+      '@style': fileURLToPath(new URL('./src/style', import.meta.url)),
+      '@api': fileURLToPath(new URL('./src/api', import.meta.url)),
+      '@global': fileURLToPath(new URL('./src/global', import.meta.url)),
+      '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
     }
   }
 })
