@@ -21,17 +21,14 @@ export default defineConfig({
       resolvers: [
         // 自动导入ElementPlus
         ElementPlusResolver(),
-        // 自动导入图标组件
-        IconsResolver({
-          prefix: 'Icon',
-        }),
       ],
     }),
     Components({
       resolvers: [
         // 自动注册图标组件
         IconsResolver({
-          // enabledCollections: ['ep'],
+          prefix: 'Icon',
+          enabledCollections: ['ep'],
         }),
         // 自动注册ElementPlus组件
         ElementPlusResolver(),
