@@ -5,7 +5,7 @@ const COMMON_TITLE = '通用管理平台'
 <template>
   <div class="header-container">
     <div class="content-box">
-      <img src="/logo.png" alt="" class="logo" />
+      <img src="@/assets/logo.svg" alt="" class="logo" />
       <h1 class="title">{{ COMMON_TITLE }}</h1>
     </div>
   </div>
